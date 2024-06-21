@@ -1,0 +1,50 @@
+header {
+    background-color: #0b1c51;
+    margin: 40px;
+}
+
+header h1 {
+    color: white;
+    font-size: 52px;
+    margin: 0;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+/* Query for Desktop */
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbd51;
+    }
+}
